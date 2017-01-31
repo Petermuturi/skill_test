@@ -1,0 +1,40 @@
+body{
+	margin: 0 !important;
+}
+#one, #two, #three{
+	display: block;
+	padding-top: 100px;
+	height: 100px;
+	text-align: center;
+	border: 1px solid rgba(0,0,0,0.5);
+	margin: 30px;
+}
+
+button{
+	display: none;
+	position: absolute;
+	margin: 0;
+	width: 100%;
+	bottom: 0;
+	cursor: pointer;
+	color: #fff;
+	background-color: rgba(0,0,225,0.5);
+	border: 1px solid rgba(0,0,225,0.5);
+	padding: 12px;
+	font-size: 14px;
+}
+#next{
+	float: right;
+}
+button:hover{
+	background-color:#fff;
+	color: rgba(0,0,225,0.5);;
+}
+@media screen and (max-width: 600px){
+	#two, #three{
+		display: none;
+	}
+	#one, button{
+		display: block;
+	}
+}
